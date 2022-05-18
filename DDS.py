@@ -271,7 +271,7 @@ class PageTwo(tk.Frame):
 
             rid = res3[0]
             s = smtplib.SMTP('smtp.gmail.com', 587)
-            sender = "yahyamohamed0001@gmail.com"
+            sender = "gmail@gmail.com"
             to = rid
             subject = "DDDS Report"
             headers = "From: %s\r\nTo: %s\r\nSubject: %s\r\n\r\n" % (
@@ -283,7 +283,7 @@ class PageTwo(tk.Frame):
             s.starttls()
             s.ehlo()
 
-            s.login("yahyamohamed0001@gmail.com", "yahya069")
+            s.login("gmail@gmail.com", "password")
             s.ehlo()
 
             print(message)
